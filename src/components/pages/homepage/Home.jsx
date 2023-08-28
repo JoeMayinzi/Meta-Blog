@@ -41,7 +41,7 @@ const Home = () => {
               />
               <Link
                 to="/"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block rounded-md"
               >
                 Technology
               </Link>
