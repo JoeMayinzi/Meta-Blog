@@ -10,19 +10,20 @@ const Contact = lazy(() => import("./components/pages/contact/Contact"));
 const ErrorPage = lazy(() => import("./components/pages/ErrorPage/ErrorPage"));
 
 function App() {
+	console.log(Home)
   return (
     <>
       <Router>
         <Header />
-        <Routes>
-          <Suspense fallback={<h1>Loading...</h1>}>
+        <Suspense fallback={<h1>Loading...</h1>}>
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/bloglist" element={<BlogListing />} />
             <Route path="/author" element={<Author />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<ErrorPage />} />
-          </Suspense>
-        </Routes>
+          </Routes>
+        </Suspense>
         <Footer />
       </Router>
     </>
