@@ -1,34 +1,63 @@
 import React from "react";
 import HeroImg from "../../../assets/img/m-post-card-overlay.png";
 import ArticleImg from "../../../assets/img/Rectangle 38.png";
+import AuthorPic from "../../../assets/img/Image.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
-      <section className="mb-[48px]">
+      <section className="mb-[48px] relative">
         <div className="container mx-auto">
-          <img src={HeroImg} alt="hero img" className=" w-full" />
+          <img src={HeroImg} alt="hero img" className=" w-full h-[500px] " />
+          <div className=" p-10 bg-white rounded-xl shadow-lg w-[598px] absolute bottom-[-50px] left-[90px] ">
+            <Link className=" bg-[#4B6BFB] text-white py-1 px-3 rounded-md text-xs mb-5">
+              Technology
+            </Link>
+            <h2 className=" font-semibold text-[#181A2A] text-xl mt-4 mb-5">
+              The Impact of Technology on the Workplace: How Technology is
+              Changing
+            </h2>
+            <div className="flex items-center gap-3">
+              <img src={AuthorPic} alt="" />
+              <span className=" font-medium text-[#97989F] ">
+                Tracey Wilson
+              </span>
+              <span className=" font-medium text-[#97989F] ">
+                August 20, 2022
+              </span>
+            </div>
+          </div>
         </div>
       </section>
-      <section>
+      <section className="mt-24">
         <div className="container mx-auto">
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-3 mb-8">
             <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
                 className="w-full h-[240px] mb-[24px] "
               />
-              <a
-                href="#"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] "
+              <Link
+                to="/"
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
               >
                 Technology
-              </a>
-              <h2 className=" font-semibold text-[#181A2A] text-2xl ">
+              </Link>
+              <h2 className=" font-semibold text-[#181A2A] text-xl mb-5">
                 The Impact of Technology on the Workplace: How Technology is
                 Changing
               </h2>
+              <div className="flex items-center gap-3">
+                <img src={AuthorPic} alt="" />
+                <span className=" font-medium text-[#97989F] ">
+                  Tracey Wilson
+                </span>
+                <span className=" font-medium text-[#97989F] ">
+                  August 20, 2022
+                </span>
+              </div>
             </article>
             <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
@@ -36,16 +65,25 @@ const Home = () => {
                 alt="article img"
                 className="w-full h-[240px] mb-[24px] "
               />
-              <a
-                href="#"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] "
+              <Link
+                to="/"
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
               >
                 Technology
-              </a>
-              <h2 className=" font-semibold text-[#181A2A] text-2xl ">
+              </Link>
+              <h2 className=" font-semibold text-[#181A2A] text-xl mb-5">
                 The Impact of Technology on the Workplace: How Technology is
                 Changing
               </h2>
+              <div className="flex items-center gap-3">
+                <img src={AuthorPic} alt="" />
+                <span className=" font-medium text-[#97989F] ">
+                  Tracey Wilson
+                </span>
+                <span className=" font-medium text-[#97989F] ">
+                  August 20, 2022
+                </span>
+              </div>
             </article>
             <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
@@ -53,16 +91,25 @@ const Home = () => {
                 alt="article img"
                 className="w-full h-[240px] mb-[24px] "
               />
-              <a
-                href="#"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] "
+              <Link
+                to="/"
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
               >
                 Technology
-              </a>
-              <h2 className=" font-semibold text-[#181A2A] text-2xl ">
+              </Link>
+              <h2 className=" font-semibold text-[#181A2A] text-xl mb-5">
                 The Impact of Technology on the Workplace: How Technology is
                 Changing
               </h2>
+              <div className="flex items-center gap-3">
+                <img src={AuthorPic} alt="" />
+                <span className=" font-medium text-[#97989F] ">
+                  Tracey Wilson
+                </span>
+                <span className=" font-medium text-[#97989F] ">
+                  August 20, 2022
+                </span>
+              </div>
             </article>
             <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
@@ -70,16 +117,25 @@ const Home = () => {
                 alt="article img"
                 className="w-full h-[240px] mb-[24px] "
               />
-              <a
-                href="#"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] "
+              <Link
+                to="/"
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
               >
                 Technology
-              </a>
-              <h2 className=" font-semibold text-[#181A2A] text-2xl ">
+              </Link>
+              <h2 className=" font-semibold text-[#181A2A] text-xl mb-5">
                 The Impact of Technology on the Workplace: How Technology is
                 Changing
               </h2>
+              <div className="flex items-center gap-3">
+                <img src={AuthorPic} alt="" />
+                <span className=" font-medium text-[#97989F] ">
+                  Tracey Wilson
+                </span>
+                <span className=" font-medium text-[#97989F] ">
+                  August 20, 2022
+                </span>
+              </div>
             </article>
             <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
@@ -87,16 +143,25 @@ const Home = () => {
                 alt="article img"
                 className="w-full h-[240px] mb-[24px] "
               />
-              <a
-                href="#"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] "
+              <Link
+                to="/"
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
               >
                 Technology
-              </a>
-              <h2 className=" font-semibold text-[#181A2A] text-2xl ">
+              </Link>
+              <h2 className=" font-semibold text-[#181A2A] text-xl mb-5">
                 The Impact of Technology on the Workplace: How Technology is
                 Changing
               </h2>
+              <div className="flex items-center gap-3">
+                <img src={AuthorPic} alt="" />
+                <span className=" font-medium text-[#97989F] ">
+                  Tracey Wilson
+                </span>
+                <span className=" font-medium text-[#97989F] ">
+                  August 20, 2022
+                </span>
+              </div>
             </article>
             <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
@@ -104,16 +169,25 @@ const Home = () => {
                 alt="article img"
                 className="w-full h-[240px] mb-[24px] "
               />
-              <a
-                href="#"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] "
+              <Link
+                to="/"
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
               >
                 Technology
-              </a>
-              <h2 className=" font-semibold text-[#181A2A] text-2xl ">
+              </Link>
+              <h2 className=" font-semibold text-[#181A2A] text-xl mb-5">
                 The Impact of Technology on the Workplace: How Technology is
                 Changing
               </h2>
+              <div className="flex items-center gap-3">
+                <img src={AuthorPic} alt="" />
+                <span className=" font-medium text-[#97989F] ">
+                  Tracey Wilson
+                </span>
+                <span className=" font-medium text-[#97989F] ">
+                  August 20, 2022
+                </span>
+              </div>
             </article>
             <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
@@ -121,16 +195,25 @@ const Home = () => {
                 alt="article img"
                 className="w-full h-[240px] mb-[24px] "
               />
-              <a
-                href="#"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] "
+              <Link
+                to="/"
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
               >
                 Technology
-              </a>
-              <h2 className=" font-semibold text-[#181A2A] text-2xl ">
+              </Link>
+              <h2 className=" font-semibold text-[#181A2A] text-xl mb-5">
                 The Impact of Technology on the Workplace: How Technology is
                 Changing
               </h2>
+              <div className="flex items-center gap-3">
+                <img src={AuthorPic} alt="" />
+                <span className=" font-medium text-[#97989F] ">
+                  Tracey Wilson
+                </span>
+                <span className=" font-medium text-[#97989F] ">
+                  August 20, 2022
+                </span>
+              </div>
             </article>
             <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
@@ -138,16 +221,25 @@ const Home = () => {
                 alt="article img"
                 className="w-full h-[240px] mb-[24px] "
               />
-              <a
-                href="#"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] "
+              <Link
+                to="/"
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
               >
                 Technology
-              </a>
-              <h2 className=" font-semibold text-[#181A2A] text-2xl ">
+              </Link>
+              <h2 className=" font-semibold text-[#181A2A] text-xl mb-5">
                 The Impact of Technology on the Workplace: How Technology is
                 Changing
               </h2>
+              <div className="flex items-center gap-3">
+                <img src={AuthorPic} alt="" />
+                <span className=" font-medium text-[#97989F] ">
+                  Tracey Wilson
+                </span>
+                <span className=" font-medium text-[#97989F] ">
+                  August 20, 2022
+                </span>
+              </div>
             </article>
             <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
@@ -155,16 +247,25 @@ const Home = () => {
                 alt="article img"
                 className="w-full h-[240px] mb-[24px] "
               />
-              <a
-                href="#"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] "
+              <Link
+                to="/"
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
               >
                 Technology
-              </a>
-              <h2 className=" font-semibold text-[#181A2A] text-2xl ">
+              </Link>
+              <h2 className=" font-semibold text-[#181A2A] text-xl mb-5">
                 The Impact of Technology on the Workplace: How Technology is
                 Changing
               </h2>
+              <div className="flex items-center gap-3">
+                <img src={AuthorPic} alt="" />
+                <span className=" font-medium text-[#97989F] ">
+                  Tracey Wilson
+                </span>
+                <span className=" font-medium text-[#97989F] ">
+                  August 20, 2022
+                </span>
+              </div>
             </article>
           </div>
         </div>
