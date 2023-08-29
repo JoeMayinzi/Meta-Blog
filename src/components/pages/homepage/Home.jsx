@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <section className="mb-[48px] relative">
-        <div className="container mx-auto">
+      <section className="mb-[48px]">
+        <div className="container mx-auto relative">
           <img src={HeroImg} alt="hero img" className=" w-full h-[500px] " />
-          <div className=" p-10 bg-white rounded-xl shadow-lg w-[598px] absolute bottom-[-50px] left-[90px] ">
+          <div className=" p-10 bg-white rounded-xl shadow-lg w-full md:w-[598px] absolute bottom-[-50px] left-0 md:left-[90px] ">
             <Link className=" bg-[#4B6BFB] text-white py-1 px-3 rounded-md text-xs mb-5">
               Technology
             </Link>
