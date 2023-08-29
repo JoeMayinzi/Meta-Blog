@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className=" mt-24 bg-[#F6F6F7] pt-16">
       <div className="container mx-auto">
-        <div className=" grid grid-cols-4 gap-20 mb-16">
+        <div className="block lg:grid grid-cols-4 gap-20 mb-16">
           <div>
             <h3 className=" text-xl font-semibold text-[#696A75] mb-3">
               About
@@ -178,7 +178,7 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <div className="py-8 flex justify-between">
+        <div className="py-8 block lg:flex justify-between">
           <div className="flex items-center gap-2">
             <img src={FooterLogo} alt="footer logo" />
             <p>
@@ -187,7 +187,7 @@ const Footer = () => {
               <span>© JS Template 2023. All Rights Reserved.</span>
             </p>
           </div>
-          <ul className=" flex items-center gap-4">
+          <ul className=" mt-5 lg:mt-0 flex items-center gap-4">
             <li>
               <Link to="/" className="text-[#696A75]">
                 Terms of Use
