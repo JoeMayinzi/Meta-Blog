@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="py-5 bg-white">
+    <header className="py-5 bg-white sticky top-0 w-full z-10">
       <nav className="container mx-auto flex justify-between items-center">
         <div>
           <img src={logo} alt="logo meta blog" />
