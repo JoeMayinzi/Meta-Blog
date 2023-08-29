@@ -32,8 +32,8 @@ const Home = () => {
       </section>
       <section className="mt-24">
         <div className="container mx-auto">
-          <div className="grid grid-cols-3 mb-8">
-            <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+          <div className=" block md:grid grid-cols-3 mb-8">
+            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -59,7 +59,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -67,7 +67,7 @@ const Home = () => {
               />
               <Link
                 to="/"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block rounded-md"
               >
                 Technology
               </Link>
@@ -85,7 +85,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -93,7 +93,7 @@ const Home = () => {
               />
               <Link
                 to="/"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block rounded-md"
               >
                 Technology
               </Link>
@@ -111,7 +111,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -119,7 +119,7 @@ const Home = () => {
               />
               <Link
                 to="/"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block rounded-md"
               >
                 Technology
               </Link>
@@ -137,7 +137,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -145,7 +145,7 @@ const Home = () => {
               />
               <Link
                 to="/"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block rounded-md"
               >
                 Technology
               </Link>
@@ -163,7 +163,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -171,7 +171,7 @@ const Home = () => {
               />
               <Link
                 to="/"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block rounded-md"
               >
                 Technology
               </Link>
@@ -189,7 +189,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -197,7 +197,7 @@ const Home = () => {
               />
               <Link
                 to="/"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block rounded-md"
               >
                 Technology
               </Link>
@@ -215,7 +215,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -223,7 +223,7 @@ const Home = () => {
               />
               <Link
                 to="/"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block rounded-md"
               >
                 Technology
               </Link>
@@ -241,7 +241,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className="w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -249,7 +249,7 @@ const Home = () => {
               />
               <Link
                 to="/"
-                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block "
+                className=" text-sm text-[#4B6BFB] font-medium mb-[20px] bg-[rgba(75, 107, 251, 0.05)] block rounded-md"
               >
                 Technology
               </Link>
