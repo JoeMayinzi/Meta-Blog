@@ -33,7 +33,7 @@ const Home = () => {
       <section className="mt-24">
         <div className="container mx-auto">
           <div className=" block md:grid grid-cols-3 mb-8">
-            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className="w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -59,7 +59,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className="w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -85,7 +85,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className="w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -111,7 +111,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className="w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -137,7 +137,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className="w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -163,7 +163,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className="w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -189,7 +189,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className="w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
@@ -215,7 +215,7 @@ const Home = () => {
                 </span>
               </div>
             </article>
-            <article className=" w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+            <article className="w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
                 alt="article img"
