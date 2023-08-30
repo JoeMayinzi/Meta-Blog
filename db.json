@@ -3,17 +3,15 @@
     {
       "id": 1,
       "title": "json-server",
-      "author": "typicode"
+      "author": "typicode",
+      "content": "lorem ipsum",
+      "category": "technology",
+      "picture": "",
+      "date": "le 04/07/200"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+  "author": {
+    "name": "typicode",
+    "picture": "here pic"
   }
 }
