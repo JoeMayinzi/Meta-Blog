@@ -3,15 +3,98 @@
     {
       "id": 1,
       "title": "json-server",
-      "author": "typicode",
       "content": "lorem ipsum",
       "category": "technology",
       "picture": "",
-      "date": "le 04/07/200"
+      "date": "le 04/07/200",
+      "author": {
+        "name": "typicode",
+        "picture": "here pic"
+      }
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "content": "lorem ipsum",
+      "category": "technology",
+      "picture": "",
+      "date": "le 04/07/200",
+      "author": {
+        "name": "typicode",
+        "picture": "here pic"
+      }
+    },
+    {
+      "id": 3,
+      "title": "json-server",
+      "content": "lorem ipsum",
+      "category": "technology",
+      "picture": "",
+      "date": "le 04/07/200",
+      "author": {
+        "name": "typicode",
+        "picture": "here pic"
+      }
+    },
+    {
+      "id": 4,
+      "title": "json-server",
+      "content": "lorem ipsum",
+      "category": "technology",
+      "picture": "",
+      "date": "le 04/07/200",
+      "author": {
+        "name": "typicode",
+        "picture": "here pic"
+      }
+    },
+    {
+      "id": 5,
+      "title": "json-server",
+      "content": "lorem ipsum",
+      "category": "technology",
+      "picture": "",
+      "date": "le 04/07/200",
+      "author": {
+        "name": "typicode",
+        "picture": "here pic"
+      }
+    },
+    {
+      "id": 6,
+      "title": "json-server",
+      "content": "lorem ipsum",
+      "category": "technology",
+      "picture": "",
+      "date": "le 04/07/200",
+      "author": {
+        "name": "typicode",
+        "picture": "here pic"
+      }
+    },
+    {
+      "id": 7,
+      "title": "json-server",
+      "content": "lorem ipsum",
+      "category": "technology",
+      "picture": "",
+      "date": "le 04/07/200",
+      "author": {
+        "name": "typicode",
+        "picture": "here pic"
+      }
+    },
+    {
+      "id": 8,
+      "title": "json-server",
+      "content": "lorem ipsum",
+      "category": "technology",
+      "picture": "",
+      "date": "le 04/07/200",
+      "author": {
+        "name": "typicode",
+        "picture": "here pic"
+      }
     }
-  ],
-  "author": {
-    "name": "typicode",
-    "picture": "here pic"
-  }
+  ]
 }
