@@ -1,39 +1,47 @@
 import React from "react";
 import logo from "../../assets/img/Logo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="py-5 bg-white sticky top-0 w-full z-10">
+    <header className="py-5 bg-white sticky top-0 w-full z-10  shadow-lg">
       <nav className="container mx-auto flex justify-between items-center">
         <div>
           <img src={logo} alt="logo meta blog" />
         </div>
         <ul className="hidden lg:flex gap-[40px] ">
           <li>
-            <Link className="text-[#3B3C4A]" to="/">
+            <NavLink
+              className="text-[#3B3C4A]s"
+              style={({ isActive }) => {
+                return {
+                  borderBottom: isActive ? "2px solid black" : "",
+                };
+              }}
+              to="/"
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="text-[#3B3C4A]" to="#">
+            <NavLink className="text-[#3B3C4A]" to="#">
               Blog
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="text-[#3B3C4A]" to="#">
+            <NavLink className="text-[#3B3C4A]" to="#">
               Single Post
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="text-[#3B3C4A]" to="#">
+            <NavLink className="text-[#3B3C4A]" to="#">
               Pages
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="text-[#3B3C4A]" to="#">
+            <NavLink className="text-[#3B3C4A]" to="#">
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <div className="hidden lg:flex items-center gap-5">
