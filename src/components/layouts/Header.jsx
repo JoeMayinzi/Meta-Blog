@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <ul className="hidden lg:flex gap-[40px] ">
           <li>
-            <Link className="text-[#3B3C4A]" to="#">
+            <Link className="text-[#3B3C4A]" to="/">
               Home
             </Link>
           </li>

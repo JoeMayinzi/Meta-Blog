@@ -9,9 +9,7 @@ import Articles from "../../articles/Articles";
 import Loader from "../../loader/Loader";
 
 const Home = () => {
-  const [posts, isLoading, error] = useGetPosts(BASE_URL);
-
-  console.log(posts);
+  const [posts] = useGetPosts(BASE_URL);
 
   return (
     <>

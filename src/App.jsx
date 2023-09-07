@@ -8,6 +8,7 @@ const BlogListing = lazy(() => import("./components/pages/blog/BlogListing"));
 const Author = lazy(() => import("./components/pages/blog/Author"));
 const Contact = lazy(() => import("./components/pages/contact/Contact"));
 const ErrorPage = lazy(() => import("./components/pages/ErrorPage/ErrorPage"));
+const SinglePost = lazy(() => import("./components/pages/blog/SinglePost"));
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/bloglist" element={<BlogListing />} />
             <Route path="/author" element={<Author />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/singlePost" element={<SinglePost />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Suspense>
