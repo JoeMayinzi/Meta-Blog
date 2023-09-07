@@ -10,7 +10,6 @@ const Contact = lazy(() => import("./components/pages/contact/Contact"));
 const ErrorPage = lazy(() => import("./components/pages/ErrorPage/ErrorPage"));
 
 function App() {
-	console.log(Home)
   return (
     <>
       <Router>

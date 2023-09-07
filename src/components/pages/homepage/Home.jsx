@@ -3,8 +3,14 @@ import HeroImg from "../../../assets/img/m-post-card-overlay.png";
 import ArticleImg from "../../../assets/img/Rectangle 38.png";
 import AuthorPic from "../../../assets/img/Image.png";
 import { Link } from "react-router-dom";
+import { useGetPosts } from "../../../utils/hooks/GetPosts";
+import { BASE_URL } from "../../../utils/api/BaseUrl";
 
 const Home = () => {
+  const [posts, isLoading, error] = useGetPosts(BASE_URL);
+
+  console.log(posts);
+
   return (
     <>
       <section className="mb-[48px]">
@@ -32,7 +38,7 @@ const Home = () => {
       </section>
       <section className="mt-24">
         <div className="container mx-auto">
-          <div className=" block md:grid grid-cols-3 mb-8">
+          <div className=" block lg:grid grid-cols-3 mb-8">
             <article className="w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
               <img
                 src={ArticleImg}
