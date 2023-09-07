@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useGetPosts } from "../../../utils/hooks/GetPosts";
 import { BASE_URL } from "../../../utils/api/BaseUrl";
 import Articles from "../../articles/Articles";
+import Loader from "../../loader/Loader";
 
 const Home = () => {
   const [posts, isLoading, error] = useGetPosts(BASE_URL);
@@ -40,15 +41,19 @@ const Home = () => {
       <section className="mt-24">
         <div className="container mx-auto">
           <div className=" block lg:grid grid-cols-3 mb-8">
-            {posts.map((post) => (
-              <Articles
-                key={post.id}
-                title={post.title}
-                content={post.body}
-                img={ArticleImg}
-                authorImg={AuthorPic}
-              />
-            ))}
+            {posts.length ? (
+              posts.map((post) => (
+                <Articles
+                  key={post.id}
+                  title={post.title}
+                  content={post.body}
+                  img={ArticleImg}
+                  authorImg={AuthorPic}
+                />
+              ))
+            ) : (
+              <Loader />
+            )}
           </div>
         </div>
       </section>
