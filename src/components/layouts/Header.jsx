@@ -1,19 +1,32 @@
-import React from "react";
-import logo from "../../assets/img/Logo.png";
+import React, { useContext } from "react";
+import lightLogo from "../../assets/img/Logo.png";
+import darkLogo from "../../assets/img/darkLogo.png";
 import { Link, NavLink } from "react-router-dom";
 import ThemeToggler from "../themeToggler/ThemeToggler";
+import { ThemeContext } from "../../utils/context/ThemeContext";
 
 const Header = () => {
+  const [theme] = useContext(ThemeContext);
   return (
-    <header className="py-5 bg-white sticky top-0 w-full z-10  shadow-lg">
+    <header
+      className={`
+py-5 ${
+        theme === "light" ? "bg-white" : "bg-[#181A2A] "
+      } sticky top-0 w-full z-10  shadow-lg`}
+    >
       <nav className="container mx-auto flex justify-between items-center">
         <Link to="/">
-          <img src={logo} alt="logo meta blog" />
+          <img
+            src={theme === "light" ? lightLogo : darkLogo}
+            alt="logo meta blog"
+          />
         </Link>
         <ul className="hidden lg:flex gap-[40px] ">
           <li>
             <NavLink
-              className="text-[#3B3C4A]s"
+              className={`${
+                theme === "light" ? "text-[#3B3C4A]" : "text-white"
+              }`}
               style={({ isActive }) => {
                 return {
                   borderBottom: isActive ? "2px solid black" : "",
@@ -25,22 +38,42 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink className="text-[#3B3C4A]" to="#">
+            <NavLink
+              className={`${
+                theme === "light" ? "text-[#3B3C4A]" : "text-white"
+              }`}
+              to="#"
+            >
               Blog
             </NavLink>
           </li>
           <li>
-            <NavLink className="text-[#3B3C4A]" to="#">
+            <NavLink
+              className={`${
+                theme === "light" ? "text-[#3B3C4A]" : "text-white"
+              }`}
+              to="#"
+            >
               Pages
             </NavLink>
           </li>
           <li>
-            <NavLink className="text-[#3B3C4A]" to="#">
+            <NavLink
+              className={`${
+                theme === "light" ? "text-[#3B3C4A]" : "text-white"
+              }`}
+              to="#"
+            >
               About
             </NavLink>
           </li>
           <li>
-            <NavLink className="text-[#3B3C4A]" to="#">
+            <NavLink
+              className={`${
+                theme === "light" ? "text-[#3B3C4A]" : "text-white"
+              }`}
+              to="#"
+            >
               Contact
             </NavLink>
           </li>
