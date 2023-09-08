@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import FooterLogo from "../../assets/img/footer-logo.png";
+import FooterLogoDark from "../../assets/img/FooterLogoDark.png";
+import { ThemeContext } from "../../utils/context/ThemeContext";
 
 const Footer = () => {
+  const [theme] = useContext(ThemeContext);
   return (
-    <footer className=" mt-24 bg-[#F6F6F7] pt-16">
+    <footer
+      className={`mt-24 ${
+        theme === "light" ? "bg-[#F6F6F7]" : "bg-[#141624]"
+      } pt-16`}
+    >
       <div className="container mx-auto">
         <div className="block lg:grid grid-cols-4 gap-20 mb-16">
           <div>
-            <h3 className=" text-xl font-semibold text-[#696A75] mb-3">
+            <h3
+              className={` text-xl font-semibold ${
+                theme === "light" ? "text-[#696A75]" : "text-white"
+              }  mb-3`}
+            >
               About
             </h3>
             <p className="text-[#696A75] mb-5">
@@ -17,16 +28,32 @@ const Footer = () => {
               enim ad minim veniam
             </p>
             <div className="flex">
-              <h4 className="font-semibold">Email : </h4>
+              <h4
+                className={`font-semibold ${
+                  theme === "light" ? "text-black" : "text-white"
+                }  mb-3`}
+              >
+                Email :
+              </h4>
               <p className="text-[#696A75]">Joemayinzi@gmail.com</p>
             </div>
             <div className="flex">
-              <h4 className="font-semibold">Phone : </h4>
+              <h4
+                className={`font-semibold ${
+                  theme === "light" ? "text-black" : "text-white"
+                }  mb-3`}
+              >
+                Phone :{" "}
+              </h4>
               <p className="text-[#696A75]">0819723232</p>
             </div>
           </div>
           <div>
-            <h3 className=" text-xl font-semibold text-[#696A75] mb-3">
+            <h3
+              className={` text-xl font-semibold ${
+                theme === "light" ? "text-[#696A75]" : "text-white"
+              }  mb-3`}
+            >
               Quick Links
               <ul>
                 <li>
@@ -81,7 +108,11 @@ const Footer = () => {
             </h3>
           </div>
           <div>
-            <h3 className=" text-xl font-semibold text-[#696A75] mb-3">
+            <h3
+              className={` text-xl font-semibold ${
+                theme === "light" ? "text-[#696A75]" : "text-white"
+              }  mb-3`}
+            >
               Category
               <ul>
                 <li>
@@ -135,9 +166,19 @@ const Footer = () => {
               </ul>
             </h3>
           </div>
-          <div className=" w-full p-2 rounded-xl bg-white">
+          <div
+            className={`w-full p-2 rounded-xl ${
+              theme === "light" ? "bg-white" : "bg-[#242535]"
+            }`}
+          >
             <div className=" text-center">
-              <h4 className=" text-xl font-semibold mb-2">Weekly Newsletter</h4>
+              <h4
+                className={`${
+                  theme === "light" ? "" : "text-white"
+                } text-xl font-semibold mb-2`}
+              >
+                Weekly Newsletter
+              </h4>
               <span className="text-[#696A75]">
                 Get blog articles and offers via email
               </span>
@@ -146,7 +187,9 @@ const Footer = () => {
                   <input
                     type="text"
                     placeholder="Your Email"
-                    className=" py-3 px-4 mb-2 border border-[#DCDDDF] focus:border-[#DCDDDF] outline-none  rounded-xl w-full"
+                    className={` ${
+                      theme === "light" ? "" : "bg-[#181A2A] border-none"
+                    } py-3 px-4 mb-2 border border-[#DCDDDF] focus:border-[#DCDDDF] outline-none  rounded-xl w-full`}
                   />
                   <svg
                     className="absolute right-3 bottom-6"
@@ -180,11 +223,29 @@ const Footer = () => {
         <hr />
         <div className="py-8 block lg:flex justify-between">
           <div className="flex items-center gap-2">
-            <img src={FooterLogo} alt="footer logo" />
+            <img
+              src={theme === "light" ? FooterLogo : FooterLogoDark}
+              alt="footer logo"
+            />
             <p>
-              Meta<span className="text-[#141624] font-semibold ">Blog</span>{" "}
+              <span
+                className={`${
+                  theme === "light" ? "text-black" : "text-white"
+                } `}
+              >
+                Meta
+              </span>
+              <span
+                className={`${
+                  theme === "light" ? "text-[#141624]" : "text-white"
+                } font-semibold`}
+              >
+                Blog
+              </span>
               <br />
-              <span>© JS Template 2023. All Rights Reserved.</span>
+              <span className="text-[#696A75]">
+                © JS Template 2023. All Rights Reserved.
+              </span>
             </p>
           </div>
           <ul className=" mt-5 lg:mt-0 flex items-center gap-4">

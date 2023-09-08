@@ -83,7 +83,9 @@ py-5 ${
             <input
               type="text"
               placeholder="Search"
-              className="bg-[#F4F4F5] outline-none w-[166px] h-[36px] px-3 rounded-md"
+              className={`${
+                theme === "light" ? "bg-[#F4F4F5]" : "bg-[#242535]"
+              } outline-none w-[166px] h-[36px] px-3 rounded-md`}
             />
             <svg
               className="absolute right-3 bottom-2.5"
