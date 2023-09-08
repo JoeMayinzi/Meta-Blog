@@ -15,7 +15,6 @@ export const useGetPosts = (url) => {
 
         if (response.status) {
           setPosts(datas);
-          console.log(posts);
           setIsLoading(false);
         } else {
           console.log("no data avaible");
