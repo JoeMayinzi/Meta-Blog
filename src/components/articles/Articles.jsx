@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Articles = ({ title, content, img, authorImg }) => {
   return (
-    <article className="w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5">
+    <article className="w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5 transition ease-in-out delay-150 hover:scale-110 duration-300">
       <img
         src={img}
         alt="article img"

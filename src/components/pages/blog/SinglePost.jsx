@@ -1,8 +1,11 @@
 import React from "react";
 import AuthorPic from "../../../assets/img/Image.png";
 import SingleBlogImg from "../../../assets/img/singleblog.png";
+import { useParams } from "react-router-dom";
 
 const SinglePost = () => {
+  const params = useParams();
+  console.log(params);
   return (
     <section>
       <div className="container mx-auto mt-20 w-full md:w-[804px] ">

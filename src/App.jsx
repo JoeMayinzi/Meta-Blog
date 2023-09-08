@@ -21,7 +21,7 @@ function App() {
             <Route path="/bloglist" element={<BlogListing />} />
             <Route path="/author" element={<Author />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/singlePost" element={<SinglePost />} />
+            <Route path="/singlePost/:id" element={<SinglePost />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Suspense>

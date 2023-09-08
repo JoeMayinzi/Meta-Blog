@@ -41,13 +41,15 @@ const Home = () => {
           <div className=" block lg:grid grid-cols-3 mb-8">
             {posts.length ? (
               posts.map((post) => (
-                <Articles
-                  key={post.id}
-                  title={post.title}
-                  content={post.body}
-                  img={ArticleImg}
-                  authorImg={AuthorPic}
-                />
+                <Link to={`/singlePost/${post.id}`}>
+                  <Articles
+                    key={post.id}
+                    title={post.title}
+                    content={post.body}
+                    img={ArticleImg}
+                    authorImg={AuthorPic}
+                  />
+                </Link>
               ))
             ) : (
               <Loader />
