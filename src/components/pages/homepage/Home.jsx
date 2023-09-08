@@ -10,30 +10,33 @@ import Loader from "../../loader/Loader";
 
 const Home = () => {
   const [posts] = useGetPosts(BASE_URL);
+  const [lastPost] = useGetPosts(`${BASE_URL}/${posts.length}`);
+  console.log(lastPost);
 
   return (
     <>
       <section className="mb-[48px]">
         <div className="container mx-auto relative">
-          <img src={HeroImg} alt="hero img" className=" w-full h-[500px] " />
-          <div className=" p-10 bg-white rounded-xl shadow-lg w-full md:w-[598px] absolute bottom-[-50px] left-0 md:left-[90px] ">
-            <Link className=" bg-[#4B6BFB] text-white py-1 px-3 rounded-md text-xs mb-5">
-              Technology
-            </Link>
-            <h2 className=" font-semibold text-[#181A2A] text-xl mt-4 mb-5">
-              The Impact of Technology on the Workplace: How Technology is
-              Changing
-            </h2>
-            <div className="flex items-center gap-3">
-              <img src={AuthorPic} alt="" />
-              <span className=" font-medium text-[#97989F] ">
-                Tracey Wilson
-              </span>
-              <span className=" font-medium text-[#97989F] ">
-                August 20, 2022
-              </span>
+          <Link to={`/singlePost/${lastPost.id}`}>
+            <img src={HeroImg} alt="hero img" className=" w-full h-[500px] " />
+            <div className=" p-10 bg-white rounded-xl shadow-lg w-full md:w-[598px] absolute bottom-[-50px] left-0 md:left-[90px] ">
+              <Link className=" bg-[#4B6BFB] text-white py-1 px-3 rounded-md text-xs mb-5">
+                Technology
+              </Link>
+              <h2 className=" font-semibold text-[#181A2A] text-xl mt-4 mb-5">
+                {lastPost.title}
+              </h2>
+              <div className="flex items-center gap-3">
+                <img src={AuthorPic} alt="" />
+                <span className=" font-medium text-[#97989F] ">
+                  Tracey Wilson
+                </span>
+                <span className=" font-medium text-[#97989F] ">
+                  August 20, 2022
+                </span>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
       <section className="mt-24">
