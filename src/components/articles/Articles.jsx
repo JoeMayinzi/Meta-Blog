@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../../utils/context/ThemeContext";
 
 const Articles = ({ title, content, img, authorImg }) => {
+  const [theme] = useContext(ThemeContext);
   return (
-    <article className="w-full lg:w-[392px] p-4 rounded-xl border-[1px] border-solid border-[#E8E8EA] shadow-lg mb-5 transition ease-in-out delay-150 hover:scale-110 duration-300">
+    <article className="w-full lg:w-[392px] p-4 rounded-xl border border-solid border-[#E8E8EA] shadow-lg mb-5 transition ease-in-out delay-150 hover:scale-110 duration-300">
       <img
         src={img}
         alt="article img"
@@ -15,7 +17,13 @@ const Articles = ({ title, content, img, authorImg }) => {
       >
         Technology
       </Link>
-      <h2 className=" font-semibold text-[#181A2A] text-xl mb-5">{title}</h2>
+      <h2
+        className={`font-semibold ${
+          theme === "light" ? "text-[#181A2A]" : "text-white"
+        } text-xl mb-5`}
+      >
+        {title}
+      </h2>
       <div className="flex items-center gap-3">
         <img src={authorImg} alt="" />
         <span className=" font-medium text-[#97989F] ">Tracey Wilson</span>
