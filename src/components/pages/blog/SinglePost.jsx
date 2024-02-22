@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { useGetPosts } from "../../../utils/hooks/GetPosts";
 import { BASE_URL } from "../../../utils/api/BaseUrl";
 import { ThemeContext } from "../../../utils/context/ThemeContext";
+import ProgressReader from "../../ProgressReader/ProgressReader";
 
 const SinglePost = () => {
   const { id } = useParams();
@@ -13,6 +14,7 @@ const SinglePost = () => {
 
   return (
     <section>
+      <ProgressReader />
       <div className="container mx-auto mt-20 w-full md:w-[804px] ">
         <h2
           className={`font-semibold mt-5 mb-5 text-3xl ${

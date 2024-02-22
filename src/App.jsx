@@ -13,7 +13,6 @@ const SinglePost = lazy(() => import("./components/pages/blog/SinglePost"));
 
 function App() {
   const [theme] = useContext(ThemeContext);
-  console.log(theme);
   return (
     <>
       <div className={theme === "light" ? " bg-white" : "bg-[#181A2A]"}>

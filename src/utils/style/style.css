@@ -65,6 +65,16 @@
     -moz-transform: rotate(359deg);
   }
 }
+progress::-moz-progress-bar {
+  background: blue;
+}
+progress::-webkit-progress-value {
+  background: blue;
+}
+progress {
+  color: blue;
+}
+
 @-o-keyframes rotation {
   from {
     -o-transform: rotate(0deg);
